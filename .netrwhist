@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/dinesh'
+let g:netrw_dirhist_7='/home/dinesh/.vim'
+let g:netrw_dirhist_6='/home/dinesh/.config/i3'
+let g:netrw_dirhist_5='/home/dinesh/.config/polybar'
+let g:netrw_dirhist_4='/home/dinesh/.config/polybar/scripts'
+let g:netrw_dirhist_3='/home/dinesh/.config/polybar'
+let g:netrw_dirhist_2='/home/dinesh/.config/i3'
+let g:netrw_dirhist_1='/usr/lib/polkit-gnome'

@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
-
+filetype off " required
+nnoremap H gT
+nnoremap L gt
+map <C-n> :NERDTreeToggle<CR>
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -18,7 +20,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'preservim/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'prettier/vim-prettier'
+Plugin 'prettier/vim-prettier'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -66,6 +68,7 @@ let g:rainbow_active = 1
 let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#jsx_bracket_same_line = 'false'
 let g:prettier#autoformat = 0
+let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
 "autocmd BufWritePre *.java,*.py,*.js,*.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 set noshowmode
 set textwidth=72

@@ -14,9 +14,7 @@ vim.g.maplocalleader = " "
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 keymap("n", "<Up>", "gk", opts)
-keymap("i", "<Up>", "gk", opts)
 keymap("n", "<Down>", "gj", opts)
-keymap("i", "<Down>", "gj", opts)
 
 -- Modes
 --   normal_mode = "n",

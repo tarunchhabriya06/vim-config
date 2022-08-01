@@ -10,6 +10,14 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Remap navigation keys
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+keymap("n", "<Up>", "gk", opts)
+keymap("i", "<Up>", "gk", opts)
+keymap("n", "<Down>", "gj", opts)
+keymap("i", "<Down>", "gj", opts)
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",

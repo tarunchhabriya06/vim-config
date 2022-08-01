@@ -54,8 +54,10 @@ keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+keymap("v", "<S-Tab>", "<gv", opts)
+keymap("v", "<Tab>", ">gv", opts)
+
+-- Copy to system clipboard
 keymap("v", "<C-c>", '"+y', opts)
 keymap("v", "<C-v>", '"+p', opts)
 
@@ -70,6 +72,10 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Indent 
+keymap("x", "<S-Tab>", "<gv", opts)
+keymap("x", "<Tab>", ">gv", opts)
 
 -- Terminal --
 -- Better terminal navigation

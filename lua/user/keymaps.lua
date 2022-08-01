@@ -88,9 +88,10 @@ keymap("x", "<Tab>", ">gv", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>f", ":Format<cr>", opts)
 
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+-- Telescope
 keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>lua require'telescope.builtin'.buffers()<cr>", opts)
+keymap("n", "<leader>fr", ":Telescope oldfiles<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>lua require'telescope.builtin'.help_tags()<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 

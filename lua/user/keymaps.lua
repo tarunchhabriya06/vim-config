@@ -58,6 +58,8 @@ keymap("v", "<Tab>", ">gv", opts)
 -- Copy to system clipboard
 keymap("v", "<C-c>", '"+y', opts)
 keymap("v", "<C-v>", '"+p', opts)
+keymap("n", "<leader>v", '"+p', opts)
+keymap("i", "<C-v>", '<C-r>+', opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)

@@ -54,8 +54,9 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   -- use 'nvim-lualine/lualine.nvim'
   -- use "glepnir/galaxyline.nvim"
-  use 'vim-airline/vim-airline'
-  use 'vim-airline/vim-airline-themes'
+  -- use 'vim-airline/vim-airline'
+  -- use 'vim-airline/vim-airline-themes'
+  use "windwp/windline.nvim"
   use "akinsho/toggleterm.nvim"
 
   -- Colorschemes

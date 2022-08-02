@@ -97,5 +97,5 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 
 -- NerdCommenter
-keymap("n", "<C-_>", "<Plug>NERDCommenterToggle<CR>", opts)
-keymap("v", "<C-_>", "<Plug>NERDCommenterToggle<CR>gv", opts)
+keymap("n", "<leader>cn", "<Plug>NERDCommenterToggle<CR>", opts)
+keymap("v", "<leader>cn", "<Plug>NERDCommenterToggle<CR>gv", opts)

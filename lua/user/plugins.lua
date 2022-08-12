@@ -48,11 +48,13 @@ return packer.startup(function(use)
   use "scrooloose/nerdcommenter" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons" -- nice icons
   use "kyazdani42/nvim-tree.lua" -- file explorer
-  use "akinsho/bufferline.nvim" -- tabline
+  -- use "akinsho/bufferline.nvim" -- tabline
   use "moll/vim-bbye"
   use 'goolord/alpha-nvim' -- Neovim dashboard page
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-  use "windwp/windline.nvim"
+  -- use "windwp/windline.nvim"
+  use 'vim-airline/vim-airline'
+  use 'vim-airline/vim-airline-themes'
   use "akinsho/toggleterm.nvim"
   use "kqito/vim-easy-replace"
 

@@ -1,5 +1,6 @@
 local gset = vim.api.nvim_set_var
 gset('airline#extensions#tabline#enabled', 1)
+gset('airline#extensions#tabline#formatter', 'unique_tail_improved')
 gset('airline#extensions#branch#enabled', 1)
 gset('airline#extensions#branch#empty_message', '')
 gset('airline#extensions#branch#use_vcscommand', 0)

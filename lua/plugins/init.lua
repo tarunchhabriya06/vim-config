@@ -5,11 +5,9 @@ local default_plugins = {
   "nvim-lua/plenary.nvim",
 
   -- nvchad plugins
-  { "NvChad/extensions", branch = "v2.0" },
-
   {
     "NvChad/base46",
-    branch = "v2.0",
+    branch = "v3.0",
     build = function()
       require("base46").load_all_highlights()
     end,
@@ -17,21 +15,10 @@ local default_plugins = {
 
   {
     "NvChad/ui",
-    branch = "v2.0",
+    branch = "v3.0",
     lazy = false,
     config = function()
-      require "nvchad_ui"
-    end,
-  },
-
-  {
-    "NvChad/nvterm",
-    init = function()
-      require("core.utils").load_mappings "nvterm"
-    end,
-    config = function(_, opts)
-      require "base46.term"
-      require("nvterm").setup(opts)
+      require "nvchad"
     end,
   },
 

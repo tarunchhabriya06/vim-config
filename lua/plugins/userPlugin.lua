@@ -54,6 +54,9 @@ return {
   },
 
   {
+    "ThePrimeagen/vim-be-good",
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
